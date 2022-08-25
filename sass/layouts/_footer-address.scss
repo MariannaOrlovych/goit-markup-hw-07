@@ -1,0 +1,42 @@
+.address{
+    font-style: unset;
+    margin-top: 0px;
+}
+
+
+.address-location {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+
+    color: var(--hero-color);
+    transition: color 250ms var(--timing-function);
+}
+
+
+.address-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.address-location:hover,
+.address-location:focus,
+.address-mail:hover,
+.address-mail:focus,
+.address-tel:hover, 
+.address-tel:focus{
+    color: var(--button-active-color);
+}
+
+
+.address-tel{
+    margin-top: 0px;
+}
+
+.address-mail, .address-tel {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms var(--timing-function);
+}

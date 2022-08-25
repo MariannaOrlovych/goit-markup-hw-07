@@ -1,0 +1,63 @@
+
+
+.footer-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-color);
+}
+
+.footer-main{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer-pre{
+    width: 231px;
+}
+
+.footer-after{
+    width: 206px;
+}
+
+.footer-after-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--hero-color);
+}
+
+.footer-icons-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-icons-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus{
+     background-color: var(--button-active-color);
+    }
+}
+
+
+.footer-icons-soc{
+    fill: var(--hero-color);
+}
+

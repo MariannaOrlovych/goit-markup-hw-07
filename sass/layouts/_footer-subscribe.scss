@@ -1,0 +1,90 @@
+.footer-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 570px;
+    height: 86px;
+}
+
+
+.footer-form-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--hero-color);
+    margin-bottom: 20px;
+}
+
+.footer-form-submit{
+    display: flex;
+}
+
+.comment-footer{
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+
+    overflow: hidden;
+
+    color: var(--hero-color);
+    outline: currentColor;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    transition: color 250ms var(--timing-function),
+    filter 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
+    &:focus {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        color: var(--hero-color);
+        border-color: var(--button-color);
+    }
+    &::placeholder{
+        font-size: 16px;
+        line-height: 1.25;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
+
+.btn-footer-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    padding: 10px 62px 10px 28px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--hero-color);
+    background-color: var(--button-active-color);
+    outline: var(--button-active-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 250ms var(--timing-function), 
+    box-shadow 250ms var(--timing-function);
+    &:focus{
+        outline: var(--button-active-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+}
+
+
+.footer-submit-icon{
+    fill: currentColor;
+    position: absolute;
+    right: 28px;
+    top:13px;
+}
