@@ -1,10 +1,7 @@
 
 
 .footer-title{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14);
     text-transform: uppercase;
     color: var(--hero-color);
 }
@@ -24,10 +21,7 @@
 }
 
 .footer-after-title{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14);
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--hero-color);
@@ -40,12 +34,10 @@
 }
 
 .footer-icons-link{
-    display: flex;
-    align-items: center;
+    @extend %aline-list;
     justify-content: center;
+    @include values(44px, 44px);
 
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
 
     background-color: rgba(255, 255, 255, 0.1);

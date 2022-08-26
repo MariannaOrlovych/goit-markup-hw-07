@@ -3,37 +3,33 @@
     
 }
 
-.about-title{
+.about__title{
     margin-bottom: 50px;
 }
 
-.about-list{
+.about__list{
     display: flex;
 }
 
-.about-item-cards{
+.about__item-cards{
     position: relative;
 }
 
-.about-item:not(:last-child){
+.about__item:not(:last-child){
     margin-right: 30px;
 }
 
-.about-item-text{
+.about__item-text{
     position: absolute;
-    display: flex;
+   @extend %aline-list;
     justify-content: center;
-    align-items: center;   
 
+    @include font(700, 14px, 1.14);
     left: 0;
     bottom: 0;
     width: 100%;
     min-height: 70px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--hero-color);
     background-color: rgba(47, 48, 58, 0.8);

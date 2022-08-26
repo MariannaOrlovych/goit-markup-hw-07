@@ -1,20 +1,18 @@
 .logo{
-    padding-top: 24px;
-    padding-bottom: 25px;
     display: inline-block;
     font-family: 'Raleway';
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(null, 26px, 1.19);
+}
+
+.header__logo{
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--first-logo-color)
+
 }
 
 
-
-.header-logo, .footer-logo{
-    color: var(--first-logo-color);
-}
-
-.header-second-logo{
+.header__logo-studio{
     color: var(--second-logo-color);
     padding-top: 0px;
     padding-bottom: 0px;

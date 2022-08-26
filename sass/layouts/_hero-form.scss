@@ -1,9 +1,8 @@
 .backdrop{
     position: fixed;
+    @include values(100%, 100%);
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 
     transition: opacity 500ms var(--timing-function),
@@ -27,10 +26,9 @@ textarea{
     left: 50%;
     border-radius: 10px;
 
-    padding: 40px;
+    @include values(528px, 581px);
 
-    width: 528px;
-    height: 581px;
+    padding: 40px;
 
     background-color: #fff;
 
@@ -40,14 +38,12 @@ textarea{
 
 
 .button-x{
-    display: flex;
-    align-items: center;
+    @extend %aline-list;
 
     position: absolute;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
+    @include values(30px, 30px);
     background-color: #fff;
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
@@ -66,11 +62,8 @@ textarea{
 }
 
 .form-title{
-    font-weight: 700px;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(700, 20px, 1.15);
     text-align: center;
-    letter-spacing: 0.03em;
     color:var(--title-text-color);
     margin-bottom: 12px;
 }
@@ -92,10 +85,8 @@ textarea{
 
 .imput-title{
     display: block;
+    @include font(null, 12px, 1.17, 0.01em);
     margin-bottom: 4px;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
     color: var(--primary-text-color);
 }
 .form-icon{
@@ -109,8 +100,7 @@ textarea{
 }
 
 .form-input{
-    width: 100%;
-    height: 40px;
+    @include values(100%, 40px);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 12px 12px 42px;
@@ -121,37 +111,28 @@ textarea{
         outline-color: var(--button-active-color);
     }
     &::placeholder{
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
-        font-size: 12px;
+        @include font(null, 12px, 1.17, 0.01em);
         color: rgba(117, 117, 117, 0.5);
     }
 }
-
-
 
 .form-comment{
     margin-bottom: 20px;
 }
 
 .comment{
-    width: 100%;
-    height: 120px;
+
+@include values(100%, 120px);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
 
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(null, 12px, 1.17, 0.01em);
     color: var(--button-text-color);
     cursor: pointer;
     transition:outline-color 250ms var(--timing-function);
     &::placeholder{
-        font-size: 12px;
-        line-height: 1.17;
-        letter-spacing: 0.01em;
+        @include font(null, 12px, 1.17, 0.01em);
     }
     &:focus{
         outline-color: var(--button-active-color);
@@ -178,22 +159,17 @@ textarea{
 }
 
 .check-text{
-    display: flex;
-    align-items: center;
+    @extend %aline-list;
     justify-content: center;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(null, 14px, 1.71);
     color: var(--primary-text-color);
     transition: background-color 250ms var(--timing-function),
     border 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
      span{
-        display: flex;
-        align-items: center;
+        @extend %aline-list;
         justify-content: center;
-         width: 16px;
-         height: 15px;
+        @include values(16px, 15px);
          border:  2px solid var(--button-text-color);
          border-radius: 3px;
          margin-right: 7px;
@@ -208,22 +184,14 @@ textarea{
 
 
 .btn-submit{
-    width: 200px;
-    height: 50px;
     display: block;
 
     margin: 0 auto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    color: var(--hero-color);
-    background-color: var(--button-active-color);
 
     border: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: outline 250ms var(--timing-function);
-    cursor: pointer;
     &:focus{
         outline: var(--button-active-color);
     }
@@ -231,19 +199,15 @@ textarea{
 }
 
 .form-field-checkbox{
-    display: flex;
-    align-items: center;
+    @extend %aline-list;
     justify-content: center;
     position: relative;
-    width: 100%;
-    height: 24px;
+    @include values(100%, 24px);
     margin-bottom: 30px;
 }
 
 
 .form-checkbox-link{
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(null, 14px, 1.71);
     color: var(--button-active-color);
 }
