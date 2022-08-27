@@ -1,4 +1,4 @@
-.filter-list{
+.button__list{
     display: flex;
     min-width: 574px;
     justify-content: center;
@@ -6,11 +6,11 @@
 }
 
 
-.filter-item:not(:last-child){
+.button__item:not(:last-child){
     margin-right: 8px;
 }
 
-.filter-btn{
+.filter__btn{
     display: block;
     @include font(500, 16px, 1.62);
     padding: 6px 22px;
@@ -37,49 +37,12 @@
 }
 
 
-.portfolio-list{
+.example__list{
     display: flex;
     flex-wrap: wrap;
 }
 
-.portfolio-cards-link{
-    display: block;
-    transition: box-shadow 250ms var(--timing-function);
-    &:hover,
-    &:focus{
-     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
-}
-
-
-.portfolio-cards{
-    position: relative;
-    overflow: hidden;
-}
-
-
-.portfolio-cards-text{
-    position: absolute;
-    @include font(null, 18px, 1.56);
-    top: 0;
-    left: 0;
-    padding: 63px 24px 63px 24px;
-
-    background-color: rgba(33, 150, 243, 0.9);
-    color: var(--hero-color);
-    width: 100%;
-    height: 100%;
-    
-    transform: translateY(101%);
-    transition: transform 250ms var(--timing-function);
-    overflow: auto;
-    .portfolio-cards-link:hover &{
-        transform: translateY(0);
-    }
-    
-}
-
-.portfolio-item{
+.example__item{
     flex-basis: calc((100% - 60px) / 3);
     color:var(--primary-backgraund-color);
     background-color:var(--primary-backgraund-color);
@@ -94,20 +57,58 @@
     
 }
 
+.example__link{
+    display: block;
+    transition: box-shadow 250ms var(--timing-function);
+    &:hover,
+    &:focus{
+     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
 
-.portfolio-item-list{
+
+.example__cards{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.example__cards-text{
+    position: absolute;
+    @include font(null, 18px, 1.56);
+    top: 0;
+    left: 0;
+    padding: 63px 24px 63px 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    color: var(--hero-color);
+    width: 100%;
+    height: 100%;
+    
+    transform: translateY(101%);
+    transition: transform 250ms var(--timing-function);
+    overflow: auto;
+    .example__link:hover &{
+        transform: translateY(0);
+    }
+    
+}
+
+
+
+.example__conteiner{
     padding: 20px 24px 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
 
-.portfolio-item-title{
+.example__conteiner-title{
     @include font(700, 18px, 2, 0.06em);
     color: var(--title-text-color);
     margin-bottom: 4px;
 }
 
-.portfolio-after-title{
+.example__conteiner-after-title{
     @include font(null, 16px, 1.88);
     color: var(--primary-text-color);
     padding-bottom: 0px;

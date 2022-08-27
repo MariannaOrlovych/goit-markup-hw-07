@@ -4,7 +4,7 @@
 }
 
 
-.address-location {
+.address__location {
     @include font(null, 12px, 1.71);
     margin-top: 0px;
 
@@ -13,25 +13,25 @@
 }
 
 
-.address-item:not(:last-child){
+.address__item:not(:last-child){
     margin-bottom: 9px;
 }
 
-.address-location:hover,
-.address-location:focus,
-.address-mail:hover,
-.address-mail:focus,
-.address-tel:hover, 
-.address-tel:focus{
+.address__location:hover,
+.address__location:focus,
+.address__mail:hover,
+.address__mail:focus,
+.address__tel:hover, 
+.address__tel:focus{
     color: var(--button-active-color);
 }
 
 
-.address-tel{
+.address__tel{
     margin-top: 0px;
 }
 
-.address-mail, .address-tel {
+.address__mail, .address__tel {
     @include font(null, 14px, 1.71);
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms var(--timing-function);

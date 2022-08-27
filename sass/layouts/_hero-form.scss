@@ -37,7 +37,7 @@ textarea{
 }
 
 
-.button-x{
+.button__x{
     @extend %aline-list;
 
     position: absolute;
@@ -51,8 +51,8 @@ textarea{
     cursor: pointer;
 }
 
-.button-x:hover .button-icon,
-.button-x:focus .button-icon{
+.button__x:hover .button__icon,
+.button__x:focus .button__icon{
     fill: var(--button-active-color);
 }
 
@@ -61,14 +61,14 @@ textarea{
     min-height: 0;
 }
 
-.form-title{
+.form__title{
     @include font(700, 20px, 1.15);
     text-align: center;
     color:var(--title-text-color);
     margin-bottom: 12px;
 }
 
-.form-field{
+.form__field{
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -77,29 +77,17 @@ textarea{
     margin-bottom:10px;
 }
 
-
-.input-wrap{
-    position: relative;
-}
-
-
-.imput-title{
+.form__label{
     display: block;
     @include font(null, 12px, 1.17, 0.01em);
     margin-bottom: 4px;
     color: var(--primary-text-color);
 }
-.form-icon{
-    position: absolute;
-    left:12px;
-    top:50%;
-    transform: translateY(-50%);
-    .form-input:focus ~ & {
-        fill: var(--button-active-color);
-     }
-}
 
-.form-input{
+.input__wrap{
+    position: relative;
+}
+.form__input{
     @include values(100%, 40px);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -116,12 +104,23 @@ textarea{
     }
 }
 
-.form-comment{
+.form__icon{
+    position: absolute;
+    left:12px;
+    top:50%;
+    transform: translateY(-50%);
+    .form__input:focus ~ & {
+        fill: var(--button-active-color);
+     }
+}
+
+
+
+.form__comment{
     margin-bottom: 20px;
 }
 
 .comment{
-
 @include values(100%, 120px);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -145,20 +144,34 @@ textarea{
     -moz-appearance: none;
     appearance: none;
     position: absolut;
-    &:checked + .check-text span{
+    &:checked + .check__text span{
         background-color: var(--button-active-color);
         border: var(--button-active-color);
     }
-    &:checked + .check-text .icon-check {
+    &:checked + .check__text .icon__check {
         fill: var(--primary-backgraund-color);
      }
-    &:focus + .check-text span{
+    &:focus + .check__text span{
         border-color: var(--button-active-color);
     }
 
 }
+.form__field-checkbox{
+    @extend %aline-list;
+    justify-content: center;
+    position: relative;
+    @include values(100%, 24px);
+    margin-bottom: 30px;
+}
 
-.check-text{
+
+.form__checkbox-link{
+    @include font(null, 14px, 1.71);
+    color: var(--button-active-color);
+}
+
+
+.check__text{
     @extend %aline-list;
     justify-content: center;
     @include font(null, 14px, 1.71);
@@ -177,13 +190,13 @@ textarea{
 }
 
 
-.icon-check{
+.icon__check{
     fill: transparent;
     transition: fill 250ms var(--timing-function);
 }
 
 
-.btn-submit{
+.btn__submit{
     display: block;
 
     margin: 0 auto;
@@ -198,16 +211,3 @@ textarea{
     
 }
 
-.form-field-checkbox{
-    @extend %aline-list;
-    justify-content: center;
-    position: relative;
-    @include values(100%, 24px);
-    margin-bottom: 30px;
-}
-
-
-.form-checkbox-link{
-    @include font(null, 14px, 1.71);
-    color: var(--button-active-color);
-}

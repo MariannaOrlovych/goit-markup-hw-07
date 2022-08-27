@@ -6,12 +6,13 @@
 @import "./utils/mixin";
 
 @import "./components/conteiner";
+@import "./components/logo";
 @import "./components/title";
 @import "./components/navigation";
 @import "./components/btn";
 
 
-@import "./layouts/logo";
+@import "./layouts/header-logo";
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/hero-form";

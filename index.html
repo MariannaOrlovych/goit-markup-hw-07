@@ -18,7 +18,7 @@
     <header class="header">
         <div class="container navigation">
              <nav class="navigation">
-                 <a class="header__logo logo link" href="/">Web<span class="header__logo-studio logo link">Studio</span></a>     
+                 <a class="header__logo logo link" href="/">Web<span class="header__logo-studio header__logo-studio--color-dark logo link">Studio</span></a>     
                     <ul class="navigation__list list">
                         <li class="navigation__item"><a class="navigation__link link navy current" href="/">Студія</a></li>
                         <li class="navigation__item"><a class="navigation__link link navy" href="./portfolio.html">Портфоліо</a> </li>
@@ -343,45 +343,45 @@
    
 
     <footer class="footer">
-        <div class="container footer-main">
-            <div class="footer-pre">
-                <a class="footer-logo logo link" href="/"> Web<span class="logo-color-footer logo link">Studio</span>
+        <div class="container footer__conteiner">
+            <div class="information">
+                <a class="logo__footer logo link" href="/"> Web<span class="logo__footer-studio  logo__footer-studio--color-light logo link">Studio</span>
                 </a>
                 <address class="address">
-                    <ul class="address-list list">
-                        <li class="address-item"><a href="https://goo.gl/maps/31fkkudy4Th9jDAP7" class="address-location link">м. Київ, пр-т Лесі Українки, 26</a></li>
-                        <li class="address-item"><a href="mailto:info@example.com" class="address-mail link">info@example.com</a> </li>
-                        <li class="address-item"><a href="tel:+380991111111" class="address-tel link">+38 099 111 11 11</a></li>
+                    <ul class="address__list list">
+                        <li class="address__item"><a href="https://goo.gl/maps/31fkkudy4Th9jDAP7" class="address__location link">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li class="address__item"><a href="mailto:info@example.com" class="address__mail link">info@example.com</a> </li>
+                        <li class="address__item"><a href="tel:+380991111111" class="address__tel link">+38 099 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-after">
-                <h2 class="footer-after-title">Приєднуйтесь</h2>
-                <ul class="footer-icons-list list">
-                    <li class="footer-icons-item">
-                        <a class="footer-icons-link link" href="/">
-                            <svg class="footer-icons-soc" width="20" height="20">
+            <div class="join">
+                <h2 class="join__after-title">Приєднуйтесь</h2>
+                <ul class="media__list list">
+                    <li class="media__item">
+                        <a class="media__link link" href="/">
+                            <svg class="img" width="20" height="20">
                                 <use href="./images/icons.svg#icon-instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-icons-item">
-                        <a class="footer-icons-link link" href="/">
-                            <svg class="footer-icons-soc" width="20" height="20">
+                    <li class="media__item">
+                        <a class="media__link link" href="/">
+                            <svg class="img" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-icons-item">
-                        <a class="footer-icons-link link" href="/">
-                            <svg class="footer-icons-soc" width="20" height="20">
+                    <li class="media__item">
+                        <a class="media__link link" href="/">
+                            <svg class="img" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="footer-icons-item">
-                        <a class="footer-icons-link link" href="/">
-                            <svg class="footer-icons-soc" width="20" height="20">
+                    <li class="media__item">
+                        <a class="media__link link" href="/">
+                            <svg class="img" width="20" height="20">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
                             </svg>
                         </a>
@@ -389,16 +389,16 @@
                 </ul>
             </div>  
 
-            <div class="footer-form">
-                <h2 class="footer-form-title">Підпишіться на розсилку</h2>
-                <form class="footer-form-submit">
+            <div class="subscribe">
+                <h2 class="subscribe__title">Підпишіться на розсилку</h2>
+                <form class="subscribe__form">
                      <label for="user-email" class="is-hidden"></label>
-                     <input class="comment-footer" name="footer-form" id="user-email" placeholder="E-mail"></input>
-                    <div class="footer-submit">
-                        <button class="btn-footer-submit btn" type="submit">
+                     <input class="comment__email" name="footer-form" id="user-email" placeholder="E-mail"></input>
+                    <div class="submit">
+                        <button class="btn__subscribe btn" type="submit">
                             Підписатися
                             <span>
-                                <svg class="footer-submit-icon" width="24" height="24">
+                                <svg class="picture" width="24" height="24">
                                     <use href="./images/icons.svg#icon-send"></use>
                                 </svg>
                             </span>
@@ -411,63 +411,63 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="button-x" type="button" data-modal-close>
-                <svg class="button-icon" width="18" height="18">
+            <button class="button__x" type="button" data-modal-close>
+                <svg class="button__icon" width="18" height="18">
                         <use href="./images/icons.svg#icon-close-black"></use>
                 </svg>
             </button>
-            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <h2 class="form__title">Залиште свої дані, ми вам передзвонимо</h2>
             <form class="form modal-form" autocomplete="on">
-                <div class="form-field">
-                    <label for="name" class="imput-title">Ім'я</label>
-                    <div class="input-wrap">
-                        <input class="form-input" type="text" name="name" id="name" autocomplete="name"  placeholder=" " required autofocus/>
-                        <svg class="form-icon" width="18" height="18">
+                <div class="form__field">
+                    <label for="name" class="form__label">Ім'я</label>
+                    <div class="input__wrap">
+                        <input class="form__input" type="text" name="name" id="name" autocomplete="name"  placeholder=" " required autofocus/>
+                        <svg class="form__icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
                 </div>
  
-                <div class="form-field">
-                    <label for="tel" class="imput-title">Телефон</label>
-                    <div class="input-wrap">
-                        <input class="form-input" type="tel" name="tel" id="tel" placeholder=" " required/>
-                        <svg class="form-icon" width="18" height="18">
+                <div class="form__field">
+                    <label for="tel" class="form__label">Телефон</label>
+                    <div class="input__wrap">
+                        <input class="form__input" type="tel" name="tel" id="tel" placeholder=" " required/>
+                        <svg class="form__icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
                 </div>
 
-                <div class="form-field">
-                    <label for="email" class="imput-title">Пошта</label>
-                    <div class="input-wrap">
-                        <input class="form-input" type="email" name="email" id="email" placeholder=" "/>
-                        <svg class="form-icon" width="18" height="18">
+                <div class="form__field">
+                    <label for="email" class="form__label">Пошта</label>
+                    <div class="input__wrap">
+                        <input class="form__input" type="email" name="email" id="email" placeholder=" "/>
+                        <svg class="form__icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
                 </div>
 
-                <div class="form-field form-comment">
-                    <label for="comment" class="imput-title">Коментар</label>
+                <div class="form__field form__comment">
+                    <label for="comment" class=" form__label">Коментар</label>
                     <textarea class="comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
                 </div>
 
-                <div class="form-field-checkbox">
+                <div class="form__field-checkbox">
                     <input class="checkbox" type="checkbox" name="checkbox" id="checkbox" value="checkbox"/>
-                    <label for="checkbox" class="check-text"> 
+                    <label for="checkbox" class="check__text"> 
                         <span>
-                            <svg class="icon-check" width="16" height="15">
+                            <svg class="icon__check" width="16" height="15">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
                         Погоджуюся з розсилкою та приймаю
-                         <a class="form-checkbox-link" href="#" target="_blank" rel="noopener noreferrer nofollow"> Умови договору</a>
+                         <a class="form__checkbox-link" href="#" target="_blank" rel="noopener noreferrer nofollow"> Умови договору</a>
                     </label>
                 </div>
 
-                <div class="btn-sub-send">
-                    <button class="btn-submit btn" type="submit">Відправити</button>
+                <div class="btn__sub__send">
+                    <button class="btn__submit btn" type="submit">Відправити</button>
                 </div>
             </form>
        </div>

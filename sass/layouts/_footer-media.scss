@@ -1,39 +1,33 @@
 
 
-.footer-title{
-    @include font(700, 14px, 1.14);
-    text-transform: uppercase;
-    color: var(--hero-color);
-}
-
-.footer-main{
+.footer__conteiner{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
 
-.footer-pre{
+.information{
     width: 231px;
 }
 
-.footer-after{
+.join{
     width: 206px;
 }
 
-.footer-after-title{
+.join__after-title{
     @include font(700, 14px, 1.14);
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--hero-color);
 }
 
-.footer-icons-list{
+.media__list{
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.footer-icons-link{
+.media__link {
     @extend %aline-list;
     justify-content: center;
     @include values(44px, 44px);
@@ -49,7 +43,7 @@
 }
 
 
-.footer-icons-soc{
+.img{
     fill: var(--hero-color);
 }
 

@@ -1,4 +1,4 @@
-.footer-form{
+.subscribe{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,18 +7,18 @@
 }
 
 
-.footer-form-title{
+.subscribe__title{
     @include font(700, 14px, 1.14);
     text-transform: uppercase;
     color: var(--hero-color);
     margin-bottom: 20px;
 }
 
-.footer-form-submit{
+.subscribe__form{
     display: flex;
 }
 
-.comment-footer{
+.comment__email{
     @include values(358px, 50px);
     margin-right: 12px;
     padding: 15px 16px;
@@ -47,7 +47,7 @@
 
 
 
-.btn-footer-submit{
+.btn__subscribe {
     @extend %aline-list;
     justify-content: center;
     position: relative;
@@ -64,7 +64,7 @@
 }
 
 
-.footer-submit-icon{
+.picture{
     fill: currentColor;
     position: absolute;
     right: 28px;
