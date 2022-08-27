@@ -1,19 +1,19 @@
-.regular-customers{
+.regular__customers{
     padding-top: 94px 200px 94px 200px;
 }
 
-.customers-title{    
+.customers__title{    
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 50px;}
 
-.customers-list{
+.client__list{
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.customer-item-example {
+.client__item-example {
     @extend %aline-list;
     justify-content: center;
     @include values(170px, 92px);
@@ -28,11 +28,11 @@
     }
 }
 
-.customer-icons{
+.client__icons{
     fill:#AFB1B8;
     transition: fill 250ms var(--timing-function);
-    .customer-item-example:hover &,
-    .customer-item-example:focus &{
+    .client__item-example:hover &,
+    .client__item-example:focus &{
         fill:var(--button-active-color);  
     }   
 }

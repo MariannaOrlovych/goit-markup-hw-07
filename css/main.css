@@ -72,7 +72,7 @@ body {
   margin-top: 0px;
 }
 
-.btn-footer-submit, .comment-footer::placeholder, .footer-icons-link, .customer-item-example, .soc__link, .cards__icon, .about__item-text, .features__list__item-link, .form-field-checkbox, .check-text span, .check-text, .button-x, .contacts__link-mail, .navigation {
+.btn-footer-submit, .comment-footer::placeholder, .footer-icons-link, .client__item-example, .soc__link, .cards__icon, .about__item-text, .features__list__item-link, .form-field-checkbox, .check-text span, .check-text, .button-x, .contacts__link-mail, .navigation {
   display: flex;
   align-items: center;
 }
@@ -599,11 +599,11 @@ textarea {
   gap: 10px;
 }
 
-.soc__item {
+.soc__icon {
   fill: #AFB1B8;
   transition: fill 250ms var(--timing-function);
 }
-.soc__link:hover .soc__item, .soc__link:focus .soc__item {
+.soc__link:hover .soc__icon, .soc__link:focus .soc__icon {
   fill: var(--hero-color);
 }
 
@@ -619,23 +619,23 @@ textarea {
   background-color: var(--button-active-color);
 }
 
-.regular-customers {
+.regular__customers {
   padding-top: 94px 200px 94px 200px;
 }
 
-.customers-title {
+.customers__title {
   padding-bottom: 0px;
   margin-top: 0px;
   margin-bottom: 50px;
 }
 
-.customers-list {
+.client__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.customer-item-example {
+.client__item-example {
   justify-content: center;
   width: 170px;
   height: 92px;
@@ -644,15 +644,15 @@ textarea {
   box-sizing: border-box;
   transition: border-color 250ms var(--timing-function);
 }
-.customer-item-example:hover, .customer-item-example:focus {
+.client__item-example:hover, .client__item-example:focus {
   border-color: var(--button-active-color);
 }
 
-.customer-icons {
+.client__icons {
   fill: #AFB1B8;
   transition: fill 250ms var(--timing-function);
 }
-.customer-item-example:hover .customer-icons, .customer-item-example:focus .customer-icons {
+.client__item-example:hover .client__icons, .client__item-example:focus .client__icons {
   fill: var(--button-active-color);
 }
 
