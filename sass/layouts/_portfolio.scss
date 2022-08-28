@@ -1,4 +1,4 @@
-.button__list{
+.button-list{
     display: flex;
     min-width: 574px;
     justify-content: center;
@@ -6,7 +6,7 @@
 }
 
 
-.button__item:not(:last-child){
+.button-list__item:not(:last-child){
     margin-right: 8px;
 }
 
@@ -37,12 +37,12 @@
 }
 
 
-.example__list{
+.example-list{
     display: flex;
     flex-wrap: wrap;
 }
 
-.example__item{
+.example-list__item{
     flex-basis: calc((100% - 60px) / 3);
     color:var(--primary-backgraund-color);
     background-color:var(--primary-backgraund-color);

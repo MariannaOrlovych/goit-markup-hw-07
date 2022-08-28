@@ -835,14 +835,14 @@ textarea {
   top: 13px;
 }
 
-.button__list {
+.button-list {
   display: flex;
   min-width: 574px;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.button__item:not(:last-child) {
+.button-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -868,22 +868,22 @@ textarea {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.example__list {
+.example-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.example__item {
+.example-list__item {
   flex-basis: calc((100% - 60px) / 3);
   color: var(--primary-backgraund-color);
   background-color: var(--primary-backgraund-color);
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.example__item:nth-child(3n) {
+.example-list__item:nth-child(3n) {
   margin-right: 0px;
 }
-.example__item:nth-last-child(-n+3) {
+.example-list__item:nth-last-child(-n+3) {
   margin-bottom: 0px;
 }
 
